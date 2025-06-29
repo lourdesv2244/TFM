@@ -1,6 +1,15 @@
 # TFM
 # Ticket Classification & Assignment MVP
 
+# Resumen
+El presente Trabajo de Fin de Máster (TFM) tiene como objetivo entregar un Producto Mínimo Viable (MVP) que consiste en un prototipo inicial para la clasificación y asignación automática de tickets técnicos en el equipo de soporte de Data & Analytics MAZ. Esta propuesta responde a la creciente demanda de soluciones operativas que permitan gestionar de manera eficiente el volumen de solicitudes recibidas, caracterizadas por un alto grado de complejidad técnica y una nomenclatura específica del dominio, lo que exige una clasificación precisa y una asignación óptima a agentes especializados.
+
+La metodología se basó en la combinación de técnicas de aprendizaje automático supervisado y procesamiento del lenguaje natural. Inicialmente, se realizó una recolección y etiquetado manual de 500 tickets reales, distribuidos en seis categorías definidas por expertos. Posteriormente, se implementó un preprocesamiento lingüístico especializado, con normalización, lematización y conservación de términos técnicos clave. Se probaron diversos algoritmos tradicionales (Random Forest, SVM, Gradient Boosting), así como una red neuronal profunda y un modelo BERT ajustado mediante fine-tuning. A partir de este último se desarrolló BERT con tokens, una versión optimizada que incorpora tokens especiales, capa de atención personalizada y generación de explicaciones automáticas.
+
+Los resultados muestran que BERT con tokens alcanza una precisión del 92,1 % en clasificación técnica, mejorando en más de 5 puntos porcentuales respecto a BERT estándar (86,7 %) y acercándose al rendimiento de los modelos tradicionales más precisos (93,4 %), con la ventaja añadida de ofrecer explicaciones interpretables sobre cada decisión. Finalmente, el sistema se integró en un flujo automatizado que no solo clasifica el ticket, sino que asigna dinámicamente al agente óptimo en función de su especialidad y carga de trabajo. Se concluye que la arquitectura propuesta representa una solución robusta, explicable y lista para su incorporación al proceso de soporte técnico de D&A.
+
+Keywords: Aprendizaje automático supervisado, Procesamiento del lenguaje natural (PLN), Red neuronal profunda, BERT, Fine-tuning, BERT con tokens, Tokens especiales, Clasificación y asignación automática, Modelos tradicionales (Random Forest, SVM, Gradient Boosting). Producto Mínimo Viable (MVP), Prototipo inicial, Recolección de tickets reales, Etiquetado manual, Preprocesamiento lingüístico, Normalización, Lematización.
+
 Este repositorio contiene el **Producto Mínimo Viable (MVP)** de una herramienta automática para la clasificación y asignación de tickets técnicos, desarrollada en Python y diseñada para integrarse fácilmente con flujos basados en Excel o plataformas como ServiceNow.
 
 
