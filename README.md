@@ -62,7 +62,9 @@ Este repositorio contiene el **Producto Mínimo Viable (MVP)** de una herramient
         --config src/config.yaml
 
 --input: Ruta al archivo Excel que contiene los tickets sin procesar.
+
 --output: Ruta donde se generará el archivo con categoría y agente asignado.
+
 --config: Opcional, archivo YAML con parámetros de umbral, reglas de asignación y estructura de columnas.
 
 
