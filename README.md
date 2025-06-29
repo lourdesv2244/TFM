@@ -52,36 +52,47 @@ Este repositorio contiene el **Producto Mínimo Viable (MVP)** de una herramient
    git clone https://huggingface.co/tu-usuario/bert-classifier.git .
 
 
----
 
 ## 🎯 Uso
-    ```bash  
+python src/classify_assign.py \
+  --input data/sample_tickets.xlsx \
+  --output results/assigned_tickets.xlsx \
+  --config src/config.yaml
+
+  ```bash
+   mkdir -p models/tokenizer models/classifier
+   cd models/tokenizer
+   git clone https://huggingface.co/tu-usuario/bert-tokenizer.git .
+   cd ../classifier
+   git clone https://huggingface.co/tu-usuario/bert-classifier.git .
    python src/classify_assign.py \
         --input data/sample_tickets.xlsx \
         --output results/assigned_tickets.xlsx \
         --config src/config.yaml
+
 
 * --input: Ruta al archivo Excel que contiene los tickets sin procesar.
 * --output: Ruta donde se generará el archivo con categoría y agente asignado.
 * --config: Opcional, archivo YAML con parámetros de umbral, reglas de asignación y estructura de columnas.
 
 
+
 ⚙️ Configuración
 
 El archivo src/config.yaml permite ajustar:
-      ```bash
-     
-      preprocessing:
-           nlp_pipeline: "spacy"    # "spacy" o "corenlp"
-           lemmatize: true
 
-      classification:
-        model_path: "../models/classifier"
-        threshold: 0.5
+ ```bash
+ preprocessing:
+    nlp_pipeline: "spacy"    # "spacy" o "corenlp"
+    lemmatize: true
+
+ classification:
+    model_path: "../models/classifier"
+    threshold: 0.5
    
-      assignment:
-        strategy: "load_balance"  # "load_balance", "skill_match"
-        agent_metadata: "../data/agents.json"
+ assignment:
+    strategy: "load_balance"  # "load_balance", "skill_match"
+    agent_metadata: "../data/agents.json"
 
 
 📈 Ejemplo de flujo
