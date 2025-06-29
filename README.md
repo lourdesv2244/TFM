@@ -69,4 +69,50 @@ python src/classify_assign.py \
 ⚙️ Configuración
 
 El archivo src/config.yaml permite ajustar:
-yaml
+preprocessing:
+  nlp_pipeline: "spacy"              # "spacy" o "corenlp"
+  lemmatize: true
+
+classification:
+  model_path: "../models/classifier"
+  threshold: 0.5
+
+assignment:
+  strategy: "load_balance"           # "load_balance", "skill_match"
+  agent_metadata: "../data/agents.json"
+
+
+📈 Ejemplo de flujo
+
+    Lectura y preprocesamiento – Limpieza de texto, lematización y extracción de entidades con spaCy/CoreNLP.
+
+    Clasificación – Transformer fine-tuned que devuelve categorías (multietiqueta si está configurado).
+
+    Asignación – Algoritmo basado en carga de trabajo, especialidad y reglas definidas en config.yaml.
+
+    Exportación – Generación de un archivo Excel con columnas:
+
+        Ticket ID
+
+        Texto original
+
+        Categorías asignadas
+
+        Agente sugerido
+
+        Score de confianza
+
+📚 Recursos adicionales
+
+    Stanford CoreNLP – Para extracción de entidades y análisis sintáctico.
+
+    Hugging Face Transformers – Para modelos BERT, GPT y fine-tuning.
+
+    spaCy – Para tokenización y procesamiento rápido en Python.
+
+🤝 Contribuciones
+
+    Haz un fork del repositorio.
+
+    Crea una rama con tu mejora:
+    git checkout -b feature/nueva-caracteristica
