@@ -55,11 +55,11 @@ Este repositorio contiene el **Producto Mínimo Viable (MVP)** de una herramient
 ---
 
 ## 🎯 Uso
-
-python src/classify_assign.py \
-  --input data/sample_tickets.xlsx \
-  --output results/assigned_tickets.xlsx \
-  --config src/config.yaml
+    ```bash  
+      python src/classify_assign.py \
+        --input data/sample_tickets.xlsx \
+        --output results/assigned_tickets.xlsx \
+        --config src/config.yaml
 
 --input: Ruta al archivo Excel que contiene los tickets sin procesar.
 --output: Ruta donde se generará el archivo con categoría y agente asignado.
@@ -69,51 +69,52 @@ python src/classify_assign.py \
 ⚙️ Configuración
 
 El archivo src/config.yaml permite ajustar:
-preprocessing:
-  nlp_pipeline: "spacy"              # "spacy" o "corenlp"
-  lemmatize: true
+   ```bash
+   preprocessing:
+     nlp_pipeline: "spacy"    # "spacy" o "corenlp"
+     lemmatize: true
 
-classification:
-  model_path: "../models/classifier"
-  threshold: 0.5
+   classification:
+     model_path: "../models/classifier"
+     threshold: 0.5
 
-assignment:
-  strategy: "load_balance"           # "load_balance", "skill_match"
-  agent_metadata: "../data/agents.json"
+   assignment:
+     strategy: "load_balance"  # "load_balance", "skill_match"
+     agent_metadata: "../data/agents.json"
 
 
 📈 Ejemplo de flujo
 
-    Lectura y preprocesamiento – Limpieza de texto, lematización y extracción de entidades con spaCy/CoreNLP.
+   1. Lectura y preprocesamiento – Limpieza de texto, lematización y extracción de entidades con spaCy/CoreNLP.
+   2. Clasificación – Transformer fine-tuned que devuelve categorías (multietiqueta si está configurado).
+   3. Asignación – Algoritmo basado en carga de trabajo, especialidad y reglas definidas en config.yaml.
+   4. Exportación – Generación de un archivo Excel con columnas:
+       * Ticket ID
+       * Texto original
+       * Categorías asignadas
+       * Agente sugerido
 
-    Clasificación – Transformer fine-tuned que devuelve categorías (multietiqueta si está configurado).
-
-    Asignación – Algoritmo basado en carga de trabajo, especialidad y reglas definidas en config.yaml.
-
-    Exportación – Generación de un archivo Excel con columnas:
-
-        Ticket ID
-
-        Texto original
-
-        Categorías asignadas
-
-        Agente sugerido
-
-        Score de confianza
+     
 
 📚 Recursos adicionales
 
-    Stanford CoreNLP – Para extracción de entidades y análisis sintáctico.
+   * Stanford CoreNLP – Para extracción de entidades y análisis sintáctico.
+   * Hugging Face Transformers – Para modelos BERT, GPT y fine-tuning.
+   * spaCy – Para tokenización y procesamiento rápido en Python.
 
-    Hugging Face Transformers – Para modelos BERT, GPT y fine-tuning.
-
-    spaCy – Para tokenización y procesamiento rápido en Python.
+     
 
 🤝 Contribuciones
+1. **Haz un fork del repositorio**
+2. **Crea una rama con tu mejora:**
+   ```bash
+   git checkout -b feature/nueva-caracteristica
+3. **Haz tus commits:**
+   ```bash
+   git commit -m "Añade X funcionalidad"
+4. **Envía un pull request.**
 
-    Haz un fork del repositorio.
 
-    Crea una rama con tu mejora:
-    ```bash
-    git checkout -b feature/nueva-caracteristica
+   
+📄 Licencia
+Este proyecto está bajo la licencia MIT. 
