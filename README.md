@@ -1,3 +1,5 @@
+![Unir_XL_1300px (1)](https://github.com/user-attachments/assets/c607c402-0507-4fdf-a8a1-e8a8f9d2d9e4)
+
 # TFM: Clasificación automática de tickets de solicitudes en área de Operaciones D&A
 Sistema de clasificación y asignación automática de tickets en ServiceNow para el área de Data & Analytics de MAZ. Este sistema se desarrolló en el marco del Trabajo de Fin de Máster en Ciencia de Datos e Inteligencia Artificial (curso 2024-2025)
 
