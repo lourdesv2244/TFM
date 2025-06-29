@@ -1,5 +1,22 @@
-# TFM
-# Ticket Classification & Assignment MVP
+# Algorithm-for-detection-of-hate-speech-in-Spanish
+Algoritmo de detección de expresiones de odio en español. Este algoritmo fue desarrollado en el marco del proyecto Hatemedia (PID2020-114584GB-I00), financiado por MCIN/AEI /10.13039/501100011033, con la colaboración de Possible Inc.
+
+Por favor lea el documento README IN SPANISH, en el que se expone todos los pasos a seguir para el uso del algoritmo desarrollado en el marco del proyecto Hatemedia (PID2020-114584GB-I00), financiado por MCIN/ AEI /10.13039/501100011033
+
+La estructura de carpetas con la documentación de Github es la presentada a continuación:
+
+        02 Documentación Github
+         └── 00_Odio y no odio
+             ├── DOCUMENTACIÓN GITHUB.docx
+             ├── ejemplo (1).py
+             ├── Modelo_binario_ (1) (1).ipynb
+             ├── obtener_caracteristicas (1).py
+             └── Recursos-20231027T110710Z-001 (1).zip
+
+Se detalla a continuación el contenido de cada fichero:
+
+- DOCUMENTACIÓN GITHUB.docx:
+Informe en el que se presenta el uso de los scripts ejemplo (1).py y obtener_caracteristicas (1).py para emplear los modelos.
 
 # Resumen
 El presente Trabajo de Fin de Máster (TFM) tiene como objetivo entregar un Producto Mínimo Viable (MVP) que consiste en un prototipo inicial para la clasificación y asignación automática de tickets técnicos en el equipo de soporte de Data & Analytics MAZ. Esta propuesta responde a la creciente demanda de soluciones operativas que permitan gestionar de manera eficiente el volumen de solicitudes recibidas, caracterizadas por un alto grado de complejidad técnica y una nomenclatura específica del dominio, lo que exige una clasificación precisa y una asignación óptima a agentes especializados.
