@@ -3,7 +3,7 @@
 
 Este repositorio contiene el **Producto Mínimo Viable (MVP)** de una herramienta automática para la clasificación y asignación de tickets técnicos, desarrollada en Python y diseñada para integrarse fácilmente con flujos basados en Excel o plataformas como ServiceNow.
 
----
+
 
 ## 📂 Estructura del repositorio
 .
@@ -23,7 +23,7 @@ Este repositorio contiene el **Producto Mínimo Viable (MVP)** de una herramient
 └── README.md                       # Documentación principal
 
 
----
+
 
 ## 🚀 Instalación
 
@@ -56,33 +56,32 @@ Este repositorio contiene el **Producto Mínimo Viable (MVP)** de una herramient
 
 ## 🎯 Uso
     ```bash  
-      python src/classify_assign.py \
+   python src/classify_assign.py \
         --input data/sample_tickets.xlsx \
         --output results/assigned_tickets.xlsx \
         --config src/config.yaml
 
---input: Ruta al archivo Excel que contiene los tickets sin procesar.
-
---output: Ruta donde se generará el archivo con categoría y agente asignado.
-
---config: Opcional, archivo YAML con parámetros de umbral, reglas de asignación y estructura de columnas.
+* --input: Ruta al archivo Excel que contiene los tickets sin procesar.
+* --output: Ruta donde se generará el archivo con categoría y agente asignado.
+* --config: Opcional, archivo YAML con parámetros de umbral, reglas de asignación y estructura de columnas.
 
 
 ⚙️ Configuración
 
 El archivo src/config.yaml permite ajustar:
-   ```bash
-   preprocessing:
-     nlp_pipeline: "spacy"    # "spacy" o "corenlp"
-     lemmatize: true
+      ```bash
+     
+      preprocessing:
+           nlp_pipeline: "spacy"    # "spacy" o "corenlp"
+           lemmatize: true
 
-   classification:
-     model_path: "../models/classifier"
-     threshold: 0.5
-
-   assignment:
-     strategy: "load_balance"  # "load_balance", "skill_match"
-     agent_metadata: "../data/agents.json"
+      classification:
+        model_path: "../models/classifier"
+        threshold: 0.5
+   
+      assignment:
+        strategy: "load_balance"  # "load_balance", "skill_match"
+        agent_metadata: "../data/agents.json"
 
 
 📈 Ejemplo de flujo
