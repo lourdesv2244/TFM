@@ -28,7 +28,7 @@ La estructura de carpetas con la documentación de Github es la presentada a con
              └── Recursos-20231027T110710Z-001 (1).zip
           └── 02_Instalacion
              ├── check_system.py
-             ├── modelo_bert2_guardado
+             ├── modelo_bert_tokens
                  ├── added_tokens.json
                  ├── bert2_weights.pt
                  ├── label_encoder.pkl
