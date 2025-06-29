@@ -1,22 +1,5 @@
-# Algorithm-for-detection-of-hate-speech-in-Spanish
-Algoritmo de detección de expresiones de odio en español. Este algoritmo fue desarrollado en el marco del proyecto Hatemedia (PID2020-114584GB-I00), financiado por MCIN/AEI /10.13039/501100011033, con la colaboración de Possible Inc.
-
-Por favor lea el documento README IN SPANISH, en el que se expone todos los pasos a seguir para el uso del algoritmo desarrollado en el marco del proyecto Hatemedia (PID2020-114584GB-I00), financiado por MCIN/ AEI /10.13039/501100011033
-
-La estructura de carpetas con la documentación de Github es la presentada a continuación:
-
-        02 Documentación Github
-         └── 00_Odio y no odio
-             ├── DOCUMENTACIÓN GITHUB.docx
-             ├── ejemplo (1).py
-             ├── Modelo_binario_ (1) (1).ipynb
-             ├── obtener_caracteristicas (1).py
-             └── Recursos-20231027T110710Z-001 (1).zip
-
-Se detalla a continuación el contenido de cada fichero:
-
-- DOCUMENTACIÓN GITHUB.docx:
-Informe en el que se presenta el uso de los scripts ejemplo (1).py y obtener_caracteristicas (1).py para emplear los modelos.
+# TFM: Clasificación automática de tickets de solicitudes en área de Operaciones D&A
+Sistema de clasificación y asignación automática de tickets en ServiceNow para el área de Data & Analytics de MAZ. Este sistema se desarrolló en el marco del Trabajo de Fin de Máster en Ciencia de Datos e Inteligencia Artificial (curso 2024-2025)
 
 # Resumen
 El presente Trabajo de Fin de Máster (TFM) tiene como objetivo entregar un Producto Mínimo Viable (MVP) que consiste en un prototipo inicial para la clasificación y asignación automática de tickets técnicos en el equipo de soporte de Data & Analytics MAZ. Esta propuesta responde a la creciente demanda de soluciones operativas que permitan gestionar de manera eficiente el volumen de solicitudes recibidas, caracterizadas por un alto grado de complejidad técnica y una nomenclatura específica del dominio, lo que exige una clasificación precisa y una asignación óptima a agentes especializados.
@@ -28,6 +11,24 @@ Los resultados muestran que BERT con tokens alcanza una precisión del 92,1 % 
 Keywords: Aprendizaje automático supervisado, Procesamiento del lenguaje natural (PLN), Red neuronal profunda, BERT, Fine-tuning, BERT con tokens, Tokens especiales, Clasificación y asignación automática, Modelos tradicionales (Random Forest, SVM, Gradient Boosting). Producto Mínimo Viable (MVP), Prototipo inicial, Recolección de tickets reales, Etiquetado manual, Preprocesamiento lingüístico, Normalización, Lematización.
 
 Este repositorio contiene el **Producto Mínimo Viable (MVP)** de una herramienta automática para la clasificación y asignación de tickets técnicos, desarrollada en Python y diseñada para integrarse fácilmente con flujos basados en Excel o plataformas como ServiceNow.
+
+
+La estructura de carpetas con la documentación de Github es la presentada a continuación:
+
+        01 Documentación Github
+         └── 00_Codigo
+             ├── DOCUMENTACIÓN GITHUB.docx
+             ├── ejemplo (1).py
+             ├── Modelo_binario_ (1) (1).ipynb
+             ├── obtener_caracteristicas (1).py
+             └── Recursos-20231027T110710Z-001 (1).zip
+
+Se detalla a continuación el contenido de cada fichero:
+
+- DOCUMENTACIÓN GITHUB.docx:
+
+
+
 
 
 
