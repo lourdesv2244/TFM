@@ -115,4 +115,5 @@ assignment:
     Haz un fork del repositorio.
 
     Crea una rama con tu mejora:
+    ```bash
     git checkout -b feature/nueva-caracteristica
