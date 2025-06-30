@@ -26,7 +26,7 @@ La estructura de carpetas con la documentación de Github es la presentada a con
              ├── Modelo_binario_ (1) (1).ipynb
              ├── obtener_caracteristicas (1).py
              └── Recursos-20231027T110710Z-001 (1).zip
-          └── 02_Instalacion
+          └── Instalacion
              ├── check_system.py
              ├── modelo_bert_tokens
                  ├── added_tokens.json
