@@ -39,6 +39,9 @@ La estructura de carpetas con la documentación de Github es la presentada a con
 
 Se detalla a continuación el contenido de cada fichero:
 
+- Mensajes_Clasificados_Manual.xlsx: Archivo de entada con 500 mensajes clasificados manualmente.
+- data_entrada.xlsx_ Archivo con data para probar los resultados del modelo.
+- resultado_BERT_tokens.xlsx: Archivo clasificado por el modelo.
 - added_tokens.json: Contiene el mapeo de los tokens personalizados que se han añadido al vocabulario original de BERT. Cada clave es el nuevo token (p. ej. nombres de herramientas o acrónimos del dominio) y su valor es el índice (entero) que ocupa dentro de la nueva tabla de vocabulario. Se usa en el BertTokenizer para que reconozca y trate correctamente estos tokens durante la tokenización.
 - special_tokens_map.json: Define el conjunto de “tokens especiales” (por ejemplo [CLS], [SEP], [PAD], [UNK], etc.) y, opcionalmente, otros tokens propios ([AADS], [DELTA],…) que se consideraron relevantes. Mapea cada tipo de token especial a la cadena que lo representa, de modo que el tokenizer sepa insertarlos o sustituirlos de forma coherente en el texto de entrada.
 - bert2_weights.pt: Contiene el state_dict completo del modelo BertForSequenceClassification tras el proceso de fine-tuning. Incluye los pesos de todas las capas Transformer, la capa de clasificación y cualquier módulo añadido (p. ej. capa de atención extra). Se carga con model.load_state_dict(torch.load("bert2_weights.pt")) para restaurar el modelo en memoria.
