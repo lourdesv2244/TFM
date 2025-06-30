@@ -20,8 +20,8 @@ Este repositorio contiene el **Producto Mínimo Viable (MVP)** de una herramient
 La estructura de carpetas con la documentación de Github es la presentada a continuación:
 
         01 Documentación Github
-         └── 00_Codigo
-             ├── DOCUMENTACIÓN GITHUB.docx
+         └── data
+             ├── Mensajes_Clasificados.xlsx
              ├── ejemplo (1).py
              ├── Modelo_binario_ (1) (1).ipynb
              ├── obtener_caracteristicas (1).py
