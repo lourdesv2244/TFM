@@ -22,18 +22,18 @@ La estructura de carpetas con la documentación de Github es la presentada a con
         01 Documentación Github
          └── data
              ├── Mensajes_Clasificados_Manual.xlsx
-             ├── ejemplo (1).py
-             ├── Modelo_binario_ (1) (1).ipynb
-             ├── obtener_caracteristicas (1).py
-             └── Recursos-20231027T110710Z-001 (1).zip
-          └── Instalacion
+             ├── data_entrada.xlsx
+             └── resultado_BERT_tokens.xlsx
+         └── Instalacion
              ├── check_system.py
-             ├── modelo_bert_tokens
+             └── modelo_bert_tokens
                  ├── added_tokens.json
                  ├── bert2_weights.pt
                  ├── label_encoder.pkl
                  ├── special_tokens_map.json
                  └── vocab.txt
+         └── codigo
+             └── Clasificacion Mensajes v2.ipynb
                  
                
 
@@ -61,7 +61,7 @@ Se detalla a continuación el contenido de cada fichero:
    * spaCy – Para tokenización y procesamiento rápido en Python.
 
 
-# Instalación
+# 🔧 Instalación
 ## Paso a Paso: Cargar y Verificar el Modelo
 
 A continuación se describe cómo cargar el sistema de clasificación y comprobar que todo está listo para realizar predicciones.
@@ -96,6 +96,9 @@ Abre un intérprete de Python o crea un script (check_system.py) con el siguient
 - Tokenizer cargado…: número de tokens en el vocabulario.
 - LabelEncoder…: lista de categorías que reconoce el modelo.
 - Modo evaluación: True indica que el modelo está listo para predecir (sin activar gradientes).
+
+# 👤 Autor
+Lourdes Villafaña
 
   
 
