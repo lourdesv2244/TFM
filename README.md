@@ -79,7 +79,7 @@ A continuación se describe cómo cargar el sistema de clasificación y comproba
 
 ### 3. Instala las dependencias  
 
-        pip install -r requirements.txt
+        pip install -r Requirements.txt
 
 ### 4. Carga el modelo y muestra el estado del sistema
 Abre un intérprete de Python o crea un script (check_system.py) con el siguiente contenido:  
