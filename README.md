@@ -68,7 +68,7 @@ A continuación se describe cómo cargar el sistema de clasificación y comproba
 
 ### 1. Clona el repositorio  
 
-        git clone https://github.com/tu-usuario/ticket-mvp.git
+        git clone https://github.com/tu-usuario/ticket-mvp.git](https://github.com/lourdesv2244/TFM.git
         cd ticket-mvp
 
 ### 2. Crea y activa un entorno virtual  
