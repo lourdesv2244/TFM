@@ -21,7 +21,7 @@ La estructura de carpetas con la documentación de Github es la presentada a con
 
         01 Documentación Github
          └── data
-             ├── Mensajes_Clasificados.xlsx
+             ├── Mensajes_Clasificados_Manual.xlsx
              ├── ejemplo (1).py
              ├── Modelo_binario_ (1) (1).ipynb
              ├── obtener_caracteristicas (1).py
